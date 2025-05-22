@@ -1,1 +1,37 @@
+public class Competitor{
+    private String name;
+    private int rank;
 
+    public Competitor(String n, int initialRank){
+        name = n;
+        rank = initialRank;
+
+    }
+}
+
+public class Match{
+
+    public Match(Competitor one, Competitor two)
+
+
+
+}
+
+public class Round{
+    private ArrayList<Competitor> competitorList;
+
+
+public Round(String[] names){
+
+
+}
+
+public ArrayList<Match> buildMatches(){
+    
+}
+
+
+
+
+
+}
