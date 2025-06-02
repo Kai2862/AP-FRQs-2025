@@ -1,4 +1,4 @@
-public class Competitor{
+epublic class Competitor{
     private String name;
     private int rank;
 
@@ -27,7 +27,19 @@ public Round(String[] names){
 }
 
 public ArrayList<Match> buildMatches(){
-    
+    public ArrayList<Match> buildMatches(){
+    ArrayList<Match> result = new ArrayList<Match>();
+    int num = 0;
+    int len = competitorList.size();
+
+    if(len%2 == 1){
+        num = 1;
+  }
+    for(int i = 0; (i<size) && ((len - i)> (i + num)); i++){
+        result.add(new Match(competitorList.get(i + num),competitorList.get(size - 1)));
+  }
+    return result;
+}
 }
 
 
